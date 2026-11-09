@@ -131,9 +131,17 @@ footer { text-align: center; margin-top: 22px; font-size: 13px; color: var(--mut
   </div>
 
   <section class="card" style="margin-top:80px">
-  <div class="avatar" id="avatar" title="Foto Profil">
-    <img src="profile.jpg" alt="Foto Profil">
+ <div class="avatar" id="avatar" title="Klik aku!">
+  <img src="profile.jpg" alt="Foto Muhammad Khaivan Adi Mahardika">
 </div>
+    .avatar { overflow: hidden; }
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
     <h1>Muhammad Khaivan Adi Mahardika</h1>
     <p class="role">Mahasiswa Manajemen Informasi Komunikasi</p>
     <p class="typed" id="typed" aria-live="polite"></p>
