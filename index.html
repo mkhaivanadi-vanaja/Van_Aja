@@ -151,7 +151,7 @@ footer { text-align: center; margin-top: 22px; font-size: 13px; color: var(--mut
 
     <div class="panel" id="p-skill" role="tabpanel" aria-labelledby="t-skill" hidden>
       <div class="skill" data-level="70"><div class="skill-head"><span>Cloud Computing</span><span>70%</span></div><div class="bar"><i></i></div></div>
-      <div class="skill" data-level="85"><div class="skill-head"><span>Komunikasi</span><span>85%</span></div><div class="bar"><i></i></div></div>
+      <div class="skill" data-level="85"><div class="skill-head"><span>Komunikasi</span><span>50%</span></div><div class="bar"><i></i></div></div>
       <div class="skill" data-level="60"><div class="skill-head"><span>HTML &amp; CSS</span><span>60%</span></div><div class="bar"><i></i></div></div>
       <div class="skill" data-level="75"><div class="skill-head"><span>Pengelolaan Informasi</span><span>75%</span></div><div class="bar"><i></i></div></div>
       <p class="hint">Klik sebuah keahlian untuk mengulang animasinya.</p>
@@ -166,7 +166,7 @@ footer { text-align: center; margin-top: 22px; font-size: 13px; color: var(--mut
     </div>
   </section>
 
-  <footer>Dibuat dengan HTML, CSS, dan JavaScript · Dihosting di GitHub Pages</footer>
+  <footer>@copy; 2026 Muhammmad Khaivan Adi Mahardika. tugas praktik mahasiswa</footer>
 </main>
 <div class="toast" id="toast" role="status"></div>
 
@@ -237,7 +237,7 @@ document.querySelectorAll('.skill').forEach(s => s.onclick = () => {
 
 // ===== Angka menghitung naik (ubah target sesuai data Anda) =====
 function countUp() {
-  [['n-sem', 5]].forEach(([id, target]) => {
+  [['n-sem', 3]].forEach(([id, target]) => {
     const el = document.getElementById(id); let n = 0;
     const iv = setInterval(() => { el.textContent = ++n; if (n >= target) clearInterval(iv); }, 90);
   });
