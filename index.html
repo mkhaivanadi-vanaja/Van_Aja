@@ -62,19 +62,21 @@ button:focus-visible, a:focus-visible, [role="tab"]:focus-visible { outline: 3px
   transition: background .4s;
 }
 .avatar {
-  width: 112px; height: 112px; margin: -76px auto 14px; border-radius: 50%;
-  display: grid; place-items: center; cursor: pointer; user-select: none;
-  font: 800 40px "Bricolage Grotesque", Arial, sans-serif; color: #fff;
-  background: conic-gradient(from 200deg, var(--brand), #4cc3ff, var(--accent), var(--brand));
-  border: 6px solid var(--card);
-  transition: transform .5s cubic-bezier(.3,1.6,.5,1);
+    width: 112px;
+    height: 112px;
+    margin: -76px auto 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid var(--card);
+    flex-shrink: 0;
 }
-  .avatar img {
+  
+.avatar img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
 }
 .avatar:active { transform: scale(.92) rotate(-8deg); }
 .avatar.spin { transform: rotate(360deg); }
