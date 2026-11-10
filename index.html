@@ -154,7 +154,7 @@ footer { text-align: center; margin-top: 22px; font-size: 13px; color: var(--mut
     </div>
 
     <div class="panel" id="p-tentang" role="tabpanel" aria-labelledby="t-tentang">
-      <p>Halo! Saya mahasiswa Manajemen Informasi Komunikasi yang sedang belajar dan fokus terhadap informasi. Saya tertarik pada cara data dan informasi bisa diakses dari mana saja dengan aman.</p>
+      <p>Halo! Saya mahasiswa Manajemen Informasi Komunikasi yang sedang belajar dan fokus terhadap konsentrasi informasi. Saya tertarik pada cara data dan informasi bisa diakses dari mana saja dengan aman.</p>
       <div class="facts">
         <div class="fact"><b id="n-sem">0</b><span>Semester</span></div>
       </div>
@@ -248,7 +248,7 @@ document.querySelectorAll('.skill').forEach(s => s.onclick = () => {
 
 // ===== Angka menghitung naik (ubah target sesuai data Anda) =====
 function countUp() {
-  [[3, 'n-sem',]].forEach(([id, target]) => {
+  [[3, 'n-sem']].forEach(([id, target]) => {
     const el = document.getElementById(id); let n = 0;
     const iv = setInterval(() => { el.textContent = ++n; if (n >= target) clearInterval(iv); }, 90);
   });
