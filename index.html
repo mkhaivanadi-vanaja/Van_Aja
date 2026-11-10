@@ -248,7 +248,7 @@ document.querySelectorAll('.skill').forEach(s => s.onclick = () => {
 
 // ===== Angka menghitung naik (ubah target sesuai data Anda) =====
 function countUp() {
-  [[3, 'n-sem']].forEach(([id, target]) => {
+  [['n-sem', 3]].forEach(([id, target]) => {
     const el = document.getElementById(id); let n = 0;
     const iv = setInterval(() => { el.textContent = ++n; if (n >= target) clearInterval(iv); }, 90);
   });
