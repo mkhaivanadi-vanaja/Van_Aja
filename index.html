@@ -255,6 +255,49 @@ function countUp() {
 }
 countUp();
 
+  <!-- Pertanyaan analisis dan diskusi -->
+    <section id="diskusi">
+      <div class="wrap">
+        <div class="kartu">
+          <h2>Pertanyaan analisis dan diskusi</h2>
+          <button type="button" class="btn-buka" id="btn-buka" aria-controls="daftar-tanya" aria-expanded="false">Buka soal dan jawaban</button>
+          <div class="tanya" id="daftar-tanya">
+            <details>
+              <summary>Apa fungsi GitHub dalam praktik ini?</summary>
+              <div class="jawab">
+                <p>GitHub berfungsi sebagai tempat penyimpanan (repository) kode website kita secara online, sekaligus sebagai platform untuk mempublikasikan website tersebut secara gratis menggunakan fitur GitHub Pages.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Mengapa website dapat diakses tanpa membuat web server sendiri?</summary>
+              <div class="jawab">
+                <p>Karena kita menumpang infrastruktur server milik GitHub. GitHub yang sudah menyediakan server, mengatur jaringan, dan mengelola hosting-nya, jadi kita tinggal upload kodenya saja <code>index.html</code> tanpa perlu repot setup server fisik atau VPS sendiri.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Apa hubungan GitHub Pages dengan Cloud Computing?</summary>
+              <div class="jawab">
+                <p>GitHub Pages adalah salah satu bentuk layanan cloud computing (khususnya Serverless/PaaS ringan) di mana sumber daya server, penyimpanan, dan akses jaringan dikelola sepenuhnya oleh penyedia layanan awan (cloud provider, yaitu GitHub) dari jarak jauh.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Apakah GitHub Pages termasuk SaaS, PaaS, atau IaaS? Jelaskan alasan Anda.</summary>
+              <div class="jawab">
+                <p>Menurut Saya, GitHub Pages termasuk ke dalam PaaS (Platform as a Service). Karena GitHub menyediakan platform dan lingkungan siap pakai bagi pengembang (kita) untuk menjalankan dan, dalam hal ini, mendistribusikan aplikasi/website tanpa harus pusing memikirkan infrastruktur dasarnya.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Apa perbedaan file website di komputer lokal dan website yang dipublikasikan?</summary>
+              <div class="jawab">
+                <p>File di komputer lokal hanya ada di perangkat sendiri. Biasanya dibuka langsung dari folder lewat alamat seperti <code>file:///</code>, dan hanya kita yang bisa melihatnya. Website yang dipublikasikan disimpan di repositori GitHub dan disajikan oleh server GitHub lewat alamat publik, sehingga siapa pun yang punya tautannya bisa membukanya.</p>
+                <p>Perubahan di komputer lokal juga tidak langsung tampil di website. Perubahan itu baru muncul setelah di-commit dan di-push ke GitHub. Nama file di server bersifat sensitif huruf besar-kecil, jadi <code>Sunraku.jpg</code> dan <code>sunraku.jpg</code> dianggap berbeda.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
 // ===== Salin email =====
 const toast = document.getElementById('toast');
 function showToast(msg) {
