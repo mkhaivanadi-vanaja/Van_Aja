@@ -195,7 +195,7 @@ setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' :
 themeBtn.onclick = () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
 
 // ===== Teks mengetik =====
-const lines = ['Saya sedang belajar Cloud Computing.', 'Saya suka membangun hal baru.', 'Selamat datang di profil saya!'];
+const lines = ['Saya sedang mencoba mepelajari informasi.', 'Saya suka membangun hal baru.', 'Selamat datang di profil saya!'];
 const typed = document.getElementById('typed');
 let li = 0, ci = 0, del = false;
 (function tick() {
@@ -248,7 +248,7 @@ document.querySelectorAll('.skill').forEach(s => s.onclick = () => {
 
 // ===== Angka menghitung naik (ubah target sesuai data Anda) =====
 function countUp() {
-  [['n-sem', 3]].forEach(([id, target]) => {
+  [['n-sem', semester]].forEach(([id, target]) => {
     const el = document.getElementById(id); let n = 0;
     const iv = setInterval(() => { el.textContent = ++n; if (n >= target) clearInterval(iv); }, 90);
   });
